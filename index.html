@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Planos de saúde com atendimento personalizado em Fortaleza. Consulte, compare e simule com especialistas.">  <!-- informa as ferramentas de busca um resumo do serviço que você presta, ou um resumo do teor de seu site -->
+    <meta name="keywords" content="plano de saúde, Fortaleza, bem viver saúde, plano familiar, plano empresarial, MEI, saúde privada"> <!-- informa aos buscadores quais são as palavras atreladas ao seu site, ou o serviço que você está atrelado -->
+    <link rel="canonical" href="https://www.bemviversaude.com/"> <!-- informa aos mecânismos de busca qual é a URL principal atrelada ao seu site -->
+    <title>BEM VIVER SAÚDE</title>
+    <!-- ÍCONE DA ABA DO NAVEGADOR -->
+    <link rel="shortcut icon" href="assets/icons/icon-logo.svg" type="image/x-icon">
+    <!-- FOLHA DE ESTILIZAÇÃO CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONTS FAMILYS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- BOOSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- SCRIPTS -->
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="barra-topo">
+            <div class="barra-topo-esquerda">
+                <span class="endereco">
+                    <i class="bi bi-geo-alt-fill"></i> Av. Senador Fernandes Távora, 127-131 - Jóquei Clube, Fortaleza - CE
+                </span> <!-- endereco -->
+            </div> <!-- barra-topo-esquerda -->
+
+            <div class="barra-topo-direita">
+                <span class="itens">
+                    <a href="https://wa.me/5585999999999" target="_blank" rel="noopener noreferrer" title="Whatsapp da Bem Viver Saude">
+                        <i class="bi bi-whatsapp"></i> 
+                        <span>(85) 9 9999-9999</span>
+                    </a>
+                </span>
+                <span class="itens">
+                    <a href="mailto:contato@bemviversaude.com" rel="noopener noreferrer" title="Email da Bem Viver Saude">
+                        <i class="bi bi-envelope-at"></i>
+                        <span>contato@bemviversaude.com</span> 
+                    </a>
+                </span>
+            </div> <!-- barra-topo-direita -->
+        </div> <!-- barra-topo -->
+        <div class="barra-navegacao">
+            <div class="logo">
+                <a href="#rodape">
+                    <img src="assets/img/logo.png" alt="Logo da Bem Viver Saude" title="Logo da Bem Viver Saude">
+                </a>
+            </div> <!-- logo -->
+
+            <nav class="lista-menu">
+                <a href="#inicio" class="link-menu">INÍCIO</a>
+                <a href="#quem-somos" class="link-menu">QUEM SOMOS</a>
+                <a href="#planos" class="link-menu">NOSSOS PLANOS</a>
+                <a href="#simulacao" class="link-menu">SIMULAÇÃO</a>
+                <a href="#depoimentos" class="link-menu">DEPOIMENTOS</a>
+                <a href="#duvidas" class="link-menu">DÚVIDAS</a>
+            </nav> <!-- lista-menu -->
+
+            <!-- IMPLEMENTAÇÃO DESCARTADA, DEVIDO UMA SOLUÇÃO MELHOR TER SIDO APLICADA
+            <div class="botao-toggle-modo_escuro">
+                <button id="toggle-tema" class="toggle-tema" aria-label="Alternar modo claro/escuro">🌙</button>
+            </div> botao-toggle-modo_escuro -->
+
+            <div class="botao-toggle-switch">
+                <input type="checkbox" id="toggle-switch-tema" hidden>
+                <label for="toggle-switch-tema" class="toggle-switch-tema"></label>
+            </div> <!-- botao-toggle-switch -->
+
+            <!-- NAVEGAÇÃO MOBILE -->
+
+            <div class="botao-toggle-abrir" id="botao-toggler-abrir">
+                <i class="bi bi-list"></i>
+            </div> <!-- botao-toggle-abrir -->
+
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="botao-toggle-fechar" id="botao-toggle-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div> <!-- botao-toggle-fechar -->
+
+                <nav>
+                    <a href="#inicio">INÍCIO</a>
+                    <a href="#quem-somos">QUEM SOMOS</a>
+                    <a href="#planos">NOSSOS PLANOS</a>
+                    <a href="#simulacao">SIMULAÇÃO</a>
+                    <a href="#depoimentos">DEPOIMENTOS</a>
+                    <a href="#duvidas">DÚVIDAS</a>
+                </nav>
+            </div> <!-- menu-toggle -->
+
+            <div class="overlay-menu" id="overlay"></div>
+        </div> <!-- barra-navegacao -->
+
+        <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+
+        <div class="botao-flutuante">
+            <a href="https://wa.me/5585999999999" target="_blank" rel="noopener noreferrer" title="Whatsapp da Bem Viver Saude"><i class="bi bi-whatsapp"></i></a>
+        </div>
+
+    </header>
+    
+    <main id="inicio">
+        <div class="banner">
+            <div class="elementos-banner">
+                <h1 class="chamada-acao">SOMOS OS MELHORES</h1>
+                <h2 class="subtitulo-banner">EM VENDA E GESTÃO DE <br>PLANOS DE SAÚDE.</h2>
+                <a href="#simulacao" class="botao-banner">SIMULE JÁ</a>
+            </div> <!-- elementos-banner -->
+        </div> <!-- banner -->
+    </main>
+
+    <section class="sobre" id="quem-somos">
+        <h2 class="titulo-2">QUEM SOMOS?</h2>
+        <div class="grupo-itens-sobre">
+            <div id="img-sobre"></div> <!-- img-sobre -->
+
+            <div class="txt-sobre">
+                <p>Somos especialistas na venda e consultoria de planos de saúde há mais de 10 anos, oferecendo os melhores planos de saúde para você, sua família ou sua empresa.</p>
+                <p>Trabalhamos com as principais operadoras do país, garantindo segurança, suporte e atendimento personalizado em cada etapa.</p>
+                <p>Nosso compromisso é com você: atendimento humano, transparente e suporte completo em todas as etapas — da simulação à contratação.</p>
+            </div> <!-- txt-sobre -->
+        </div> <!-- grupo-itens-sobre -->
+    </section> <!-- sobre -->
+
+    <section class="planos" id="planos">
+        <h2 class="titulo-1">Nossos Planos</h2>
+        <div class="grupo-itens-planos">
+            <div class="item-plano">
+                <div class="titulo-item-plano">
+                    <img src="assets/icons/icon-basic.svg" alt="Ícone do Plano Premium">
+                    <h3>BASIC</h3>
+                </div> <!-- titulo-item-plano -->
+                <p>O Plano Basic oferece cobertura básica com acesso a uma rede credenciada selecionada, ideal para consultas médicas, exames de rotina e pronto atendimento.</p>
+            </div> <!-- item-plano 1 -->
+
+            <div class="item-plano">
+                <div class="titulo-item-plano">
+                    <img src="assets/icons/icon-standart.svg" alt="Ícone do Plano Premium">
+                    <h3>STANDARD</h3>
+                </div> <!-- titulo-item-plano -->
+                <p>Com o Plano Standard, você garante acesso a uma rede ampliada de serviços e especialistas, com maior flexibilidade para atender suas necessidades.</p>
+            </div> <!-- item-plano 2 -->
+
+            <div class="item-plano">
+                <div class="titulo-item-plano">
+                    <img src="assets/icons/icon-premium.svg" alt="Ícone do Plano Premium">
+                    <h3>PREMIUM</h3>
+                </div> <!-- titulo-item-plano -->
+                <p>O Plano Premium é pensado para quem deseja o máximo em cobertura, conforto e atendimento exclusivo. Ideal para famílias ou perfis que valorizam a melhor experiência em saúde.</p>
+            </div> <!-- item-plano 3 -->
+        </div> <!-- itens-grupo-planos -->
+    </section> <!-- planos -->
+
+    <section class="parceiros">
+        <div class="grupo-itens-parceiros">
+            <h2 class="titulo-2">Empresas Conveniadas</h2>
+            <div class="logo-parceiros">
+                <img src="assets/img/logo-hapvida.png" alt="Logo da Hapvida Assistência Médica S.A." title="Logo da Hapvida Assistência Médica S.A.">
+                <img src="assets/img/logo-unimed.png" alt="Logo da Unimed Fortaleza Sociedade Cooperativa Médica Ltda" title="Logo da Unimed Fortaleza Sociedade Cooperativa Médica Ltda">
+                <img src="assets/img/logo-bradesco.png" alt="Logo da Bradesco Saúde S/A" title="Logo da Bradesco Saúde S/A">
+                <img src="assets/img/logo-amil.png" alt="Logo da Amil Assistência Médica Internacional S.A." title="Logo da Amil Assistência Médica Internacional S.A.">
+                <img src="assets/img/logo-sulamerica.png" alt="Logo da SulAmérica Companhia de Seguro Saúde" title="Logo da SulAmérica Companhia de Seguro Saúde">
+            </div> <!-- logo-parceiros -->
+        </div> <!-- grupo-itens-parceiros -->
+    </section> <!-- parceiros -->
+
+    <section class="simulacao" id="simulacao"> 
+        <div class="grupo-itens-simulacao simulacao-ativa"> 
+            <div class="esquerda-simulacao">
+                <div class="resultado" id="resultado">
+                    <h2 class="titulo-1">Tabela Comparativa</h2>
+                    <table class="tabela-resultado" id="tabela-resultado">
+                        <thead>
+                            <tr>
+                                <th>Plano</th>
+                                <th>Hapvida</th>
+                                <th>Unimed</th>
+                                <th>Mais Vantajoso</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4">
+                                    Preencha o formulário, para visualizar a comparação.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="submit" class="botao-simular" id="botao-simular">Simular de novo</button>
+                </div> <!-- resultado -->                   
+                <div class="chamada-simulacao">
+                    <h2 class="titulo-2">O plano ideal <br>você encontra aqui!</h2>
+                    <p>Faça uma simulação, e escolha o plano que melhor se encaixa com o seu perfil ou necessidade.</p>
+                </div> <!-- chamada-simulacao -->
+            </div> <!-- esquerda-simulacao -->
+            <div class="direita-simulacao">
+                <div class="contato-simulacao">
+                    <h2 class="titulo-2">Ficou interessado?</h2>
+                    <p>Fale conosco para obter mais informações, e garantir o seu plano.</p>
+                    <div class="contato">
+                        <div class="item-contato" title="Whatsapp da Bem Viver Saude">
+                            <i class="bi bi-whatsapp"></i> 
+                            <span>(85) 9 9999-9999</span>
+                        </div> <!-- item-contato-1 -->
+                        <div class="item-contato" title="Telefone Fixo da Bem Viver Saude">
+                            <i class="bi bi-telephone"></i>
+                            <span>(85) 9999-9999</span>
+                        </div> <!-- item-contato-2 -->
+                    </div> <!-- contato -->
+                </div> <!-- contato-simulacao -->
+                <div class="formulario">
+                    <h2 class="titulo-1">Simulação</h2>
+                    <form class="formulario-simulacao" id="formulario-simulacao">
+                        <input type="number" id="idade" name="idade" placeholder="Idade" required min="0" aria-label="Idade">
+                        <input type="number" id="peso" name="peso" placeholder="Peso (Ex: 70.2)" required step="0.1" min="0" aria-label="Peso em quilogramas">
+                        <input type="number" id="altura" name="altura" placeholder="Altura (Ex: 1.70)" required step="0.01" min="0" aria-label="Altura em metros">
+                        <button type="submit" class="botao-resultado">Simular</button>
+                    </form>
+                </div> <!-- formulario -->
+            </div> <!-- direita-simulacao -->
+        </div> <!-- grupo-itens-simulacao -->
+    </section> <!-- simulacao -->
+
+    <section class="depoimentos" id="depoimentos">
+        <h2 class="titulo-1">Depoimentos de Clientes</h2>
+        <div class="grupo-itens-depoimentos">
+            <div class="item-depoimento">
+                <p>"Recebi um atendimento excelente e consegui fechar um plano que cabe no meu bolso. Recomendo muito!" — Maria Helena S., autônoma</p> 
+            </div> <!-- item-depoimento 1 -->
+
+            <div class="item-depoimento">
+                <p>"Nossa empresa contratou o plano com suporte deles e foi tudo rápido e transparente. Atendimento nota 10!" — Rodrigo F., empresário</p>
+            </div> <!-- item-depoimento 2 -->
+
+            <div class="item-depoimento">
+                <p>"Nunca pensei que fosse tão fácil entender e contratar um plano de saúde. Obrigada pela atenção e paciência!" — Juliana M., cliente</p>
+            </div> <!-- item-depoimento 3 -->
+        </div> <!-- grupo-itens-depoimentos -->
+    </section> <!-- depoimentos -->
+
+    <section class="duvidas" id="duvidas">
+        <h2 class="titulo-2">Dúvidas Frequentes</h2>
+        <div class="grupo-itens-duvidas">
+            <div class="item-duvida">
+                <h4>Qual é o período de carência dos planos?</h4>
+                <p>O prazo de carência pode variar de acordo com a operadora e o tipo de plano. Em geral, vai de 24 horas para urgência e emergência até 180 dias para procedimentos mais complexos.</p>
+            </div> <!-- item-duvida 1 -->
+
+            <div class="item-duvida">
+                <h4>O plano cobre consultas e exames?</h4>
+                <p>Sim, todos os planos oferecidos possuem cobertura para consultas, exames laboratoriais e de imagem, conforme o rol da ANS.</p>
+            </div> <!-- item-duvida 2 -->
+
+            <div class="item-duvida">
+                <h4>Quais documentos são necessários para contratar um plano?</h4>
+                <p>RG, CPF, comprovante de residência e, no caso de planos empresariais ou para MEIs, também o CNPJ e documentos da empresa.</p>
+            </div> <!-- item-duvida 3 -->
+
+            <div class="item-duvida">
+                <h4>Posso migrar ou fazer portabilidade de outro plano?</h4>
+                <p>Sim! A portabilidade é permitida pela ANS, desde que o beneficiário esteja em dia com as regras (ex: tempo mínimo de permanência e compatibilidade de cobertura).</p>
+            </div> <!-- item-duvida 4 -->
+        </div> <!-- grupo-itens-duvidas -->
+    </section> <!-- duvidas -->
+    
+    <footer id="rodape">
+        <div class="grupo-itens-rodape">
+            <div class="rodape-superior">
+                <div class="item-rodape-superior item-rodape-superior-esquerda">
+                    <img src="assets/img/logo.png" loading="lazy" alt="Logo da Bem Viver Saude" title="Logo da Bem Viver Saude">
+                </div> <!-- item-rodape-superior-esquerda -->
+
+                <div class="item-rodape-superior  item-rodape-superior-centro">
+                    <h4>SOBRE NÓS</h4>
+                    <p>BEM VIVER SAÚDE</p>
+                    <p>CNPJ: 00.000.000/0001-00</p>
+                    <p>Inscrição Estadual: 000.000.000.000</p>
+                </div> <!-- item-rodape-superior-centro -->
+
+                <div class="item-rodape-superior  item-rodape-superior-direita">
+                    <h4>ENDEREÇO</h4>
+                    <p>Av. Senador Fernandes Távora, 127-131 - Jóquei Clube, Fortaleza - CE</p>
+                </div> <!-- item-rodape-superior-direita -->
+            </div> <!-- rodape-superior -->
+
+            <div class="rodape-inferior">
+                <p>Copyright © 2013-2025, Bem Viver Saúde. Todos os direitos reservados.</p>
+                <p>Termos de uso | Política de privacidade | Uso de dados conforme LGPD</p>
+            </div> <!-- rodape-inferior -->
+        </div> <!-- grupo-itens-rodape -->
+    </footer>
+
+    <script src="js/tema.js" defer></script>
+
+    <script src="js/form-simulacao.js" defer></script>
+
+    <script src="js/bg-movel-simulacao.js" defer></script>
+
+</body>
+</html>
